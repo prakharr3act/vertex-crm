@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    min-width: 500px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.btn-div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 6px;
+    font-family: "Orbitron", sans-serif;
+    border: 1px solid #c7d8bf;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    color: #333;
+}
+
+input:focus {
+    outline: none;
+    border-color: #5f9341;
+    box-shadow: 0 0 0 2px rgba(95, 147, 65, 0.2);
+    background-color: #ffffff;
+}
+
+button {
+    background-color: #5f9341;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    flex-grow: 1;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.1s;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #4b7835;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+#dlt-btn {
+    color: #5f9341;
+    background-color: white;
+    padding: 12px 20px;
+    border: 2px solid #5f9341;
+    cursor: pointer;
+    flex-grow: 1;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+    text-transform: uppercase;
+}
+
+#dlt-btn:hover {
+    color: white;
+    background-color: #5f9341;
+}
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+    font-size: 25px;
+    line-height: 1.6;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+}
+
+li {
+    text-decoration: none;
+    padding: 8px 0;
+    border-bottom: 1px dashed #e0e0e0;
+    color: #444;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+a {
+    color: #5f9341;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #4b7835;
+    text-decoration: underline;
+}
