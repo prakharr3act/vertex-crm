@@ -206,3 +206,52 @@ hr {
 .cancel-btn { 
     background-color: #5f9341 !important; 
 }
+
+.modal-overlay { 
+    display: none; 
+    position: fixed; 
+    inset: 0; 
+    background: rgba(0, 0, 0, 0.85); 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 1000; 
+}
+
+.modal-content { 
+    background: var(--card); 
+    padding: 30px; 
+    border-radius: 12px; 
+    text-align: center; 
+    color: var(--text);
+    width: 90%;
+    max-width: 350px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.modal-content h3 {
+    font-family: "Orbitron", sans-serif;
+    color: #ff4d4d;
+    margin-top: 0;
+}
+
+.modal-btns { 
+    display: flex; 
+    gap: 15px; 
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.modal-btns button {
+    flex: 1; /* This makes both buttons the same size */
+    height: 45px;
+    font-size: 14px;
+}
+
+.confirm-btn { 
+    background-color: #ff4d4d !important; 
+}
+
+.cancel-btn { 
+    background-color: #5f9341 !important; 
+}
+
