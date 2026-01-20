@@ -31,4 +31,4 @@ Project Repository: [prakharr3act.github.io/prakharrpatel/](https://prakharr3act
 ## Installation and Usage
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/your-username/vertex.git](https://github.com/your-username/vertex.git)
+   git clone [https://github.com/prakharr3act/vertex.git](https://github.com/prakharr3act/vertex.git)
