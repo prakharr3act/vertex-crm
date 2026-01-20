@@ -225,6 +225,7 @@ hr {
     color: var(--text);
     width: 90%;
     max-width: 350px;
+    font-family: 'Courier New', Courier, monospace;
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
 }
 
@@ -242,7 +243,7 @@ hr {
 }
 
 .modal-btns button {
-    flex: 1; /* This makes both buttons the same size */
+    flex: 1; 
     height: 45px;
     font-size: 14px;
 }
@@ -255,3 +256,32 @@ hr {
     background-color: #5f9341 !important; 
 }
 
+#upload-warning-overlay .modal-btns {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    width: 100%;
+}
+
+#upload-warning-overlay .modal-btns button {
+    flex: 1;
+    height: 50px;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+#back-warning {
+    background-color: transparent;
+    border: 1px solid var(--border);
+    color: white;;
+}
+
+#back-warning:hover {
+    background-color: var(--border);
+    color: rgb(240, 240, 240);
+}
