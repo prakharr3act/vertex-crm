@@ -97,3 +97,31 @@ function saveAndRender() {
     localStorage.setItem("myLeads", JSON.stringify(myLeads));
     render(myLeads);
 }
+
+
+const fileInput = document.getElementById("file-el");
+const uploadWarning = document.getElementById("upload-warning-overlay");
+const closeWarningBtn = document.getElementById("close-warning");
+const backWarningBtn = document.getElementById("back-warning");
+
+fileInput.addEventListener("click", function(e) {
+    if (!uploadWarning.dataset.acknowledged) {
+        e.preventDefault();
+        uploadWarning.style.display = "flex";
+    }
+});
+
+closeWarningBtn.addEventListener("click", function() {
+    uploadWarning.style.display = "none";
+    uploadWarning.dataset.acknowledged = "true";
+    fileInput.click();
+});
+
+backWarningBtn.addEventListener("click", function() {
+    uploadWarning.style.display = "none";
+    uploadWarning.dataset.acknowledged = ""; 
+});
+
+fileInput.addEventListener("change", function() {
+    uploadWarning.dataset.acknowledged = "";
+});
