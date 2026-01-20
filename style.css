@@ -1,13 +1,12 @@
-body {
-    margin: 0;
-    padding: 10px;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    min-width: 500px;
-}
-
 * {
     box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px 10px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
 }
 
 .container {
@@ -16,14 +15,6 @@ body {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-    padding: 10px;
-}
-
-.btn-div {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    margin-top: 15px;
 }
 
 input {
@@ -33,9 +24,9 @@ input {
     font-family: "Orbitron", sans-serif;
     border: 1px solid #c7d8bf;
     font-size: 16px;
-    margin-top: 10px;
     transition: border-color 0.3s, box-shadow 0.3s;
     color: #333;
+    text-align: center;
 }
 
 input:focus {
@@ -43,6 +34,13 @@ input:focus {
     border-color: #5f9341;
     box-shadow: 0 0 0 2px rgba(95, 147, 65, 0.2);
     background-color: #ffffff;
+}
+
+.btn-div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
 }
 
 button {
@@ -89,20 +87,19 @@ button:active {
 }
 
 ul {
-    margin-top: 20px;
+    margin-top: 25px;
     list-style: none;
-    padding-left: 0;
-    font-size: 25px;
+    padding: 0;
+    font-size: 20px;
     line-height: 1.6;
     border-top: 1px solid #e0e0e0;
     padding-top: 10px;
+    text-align: center;
 }
 
 li {
-    text-decoration: none;
-    padding: 8px 0;
+    padding: 10px 0;
     border-bottom: 1px dashed #e0e0e0;
-    color: #444;
 }
 
 li:last-child {
@@ -113,9 +110,26 @@ a {
     color: #5f9341;
     text-decoration: none;
     transition: color 0.2s;
+    word-break: break-all;
 }
 
 a:hover {
     color: #4b7835;
     text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .btn-div {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    ul {
+        font-size: 16px;
+    }
+
+    button, #dlt-btn {
+        width: 100%;
+        padding: 15px;
+    }
 }
