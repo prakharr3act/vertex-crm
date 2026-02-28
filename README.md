@@ -26,7 +26,6 @@ Vertex includes a specific protocol regarding mobile usage. Due to the memory co
 
 ## Developer Information
 Developed by Prakhar Patel. 
-Project Repository: [prakharr3act.github.io/prakharrpatel/](https://prakharr3act.github.io/prakharrpatel/)
 
 ## Installation and Usage
 1. Clone the repository:
